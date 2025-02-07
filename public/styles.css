@@ -1,0 +1,59 @@
+/* https://chatgpt.com/share/67a55531-6930-8009-951e-a51d161fe03f */
+
+body { 
+    font-family: Arial, sans-serif;
+    background:#fde8ed
+   
+}
+   
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9c2d1;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #d02d70;
+    text-align: center;
+  
+}
+
+h4 {
+    color: #d02d70;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h5 {
+    color: #d02d70;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.entry {
+    background-color: #ffd6e0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #d02d70;
+}
+
+.entry-date {
+    font-weight: bold;
+}
+
+.entry-content {
+    font-size: 16px;
+    color: #333;
+}

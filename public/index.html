@@ -1,52 +1,39 @@
+ <!-- https://chatgpt.com/share/67a55531-6930-8009-951e-a51d161fe03f  -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Diary</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Diary Entry</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 </head>
 <body>
-<center>
-    <div class="diary-container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="/index.html"> My Diary</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/entry.html">My Entry</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/">Saved</a>
-                  </li>
-                </ul>
+    <center>
+    <div class="container">
+        <h1>Diary Entry</h1>
+        <div class="entry-detail">
+            
+            <div class="card" style="width: 18rem;">
+                <img src="data:image/jpeg;base64,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" class="card-img-top" alt="diary">
+                <div class="card-body">
+                  <a href="https://www.rapidtables.com/tools/notepad.html" class="btn btn-primary">Here's your own diary!</a>
+                </div>
               </div>
+            <div class="entry-content">
+                <h4>A diary is a personal space where individuals can express their thoughts, emotions, and experiences. It allows them to reflect on their day, process difficult feelings, and track personal growth. Writing regularly in a diary can help clarify thoughts, reduce stress, and bring awareness to both small moments and larger patterns in life. It's a tool for self-understanding, offering a safe outlet for both joy and struggle, and serves as a record of one's journey over time.</h4>
+                <h5>An example being: </h5>
+                <div class="entry-header">
+                    <span class="entry-date">2025-02-06 - 10:00 AM</span>
+                </div>
+                <p>Today was a beautiful day. The sun was shining, and I spent the morning reading my favorite book. I felt at peace and truly enjoyed the moment. It was one of those days where everything just feels right, and I’m grateful for it.</p>
             </div>
-          </nav>
-          <div class="overview-container">
-            <h1 class="overview-title">Welcome to My Diary</h1>
-            <p class="overview-text">
-                "My Diary" is your personal space to capture thoughts, memories, and emotions.  
-                Flip through your past entries, add new ones, and cherish your journey over time.  
-                Every page holds a special moment, waiting to be revisited.
-            </p>
-    
-            <p class="overview-text">
-                Navigate between pages using theand create new diary entries to store your daily experiences.
-            </p>
-    
-    
-
-        <!-- Button to go to the new entry page -->
-        
+        </div>
+        <a href="/overview" class="back-link">Back to Overview</a>
+    </div>
 </center>
-    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>

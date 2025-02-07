@@ -1,0 +1,26 @@
+
+ <!-- https://chatgpt.com/share/67a55531-6930-8009-951e-a51d161fe03f  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Diary Entry</title>
+     <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+     <div class="container">
+         <h1>Diary Entry</h1>
+         <div class="entry-detail">
+             <div class="entry-header">
+                 <span class="entry-date"><%= post.date %> - <%= post.time %></span>
+             </div>
+             <div class="entry-content">
+                 <p><%= post.entry %></p>
+             </div>
+         </div>
+         <a href="/" class="back-link">Back to Overview</a>
+     </div>
+ </body>
+ </html>
+ 
